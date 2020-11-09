@@ -1,5 +1,3 @@
-Min repro of duplicate sourcemap entries.
+This branch shows Vue not rendering components correctly.
 
-Observe that Hello.vue is in source map as both:
-- `../src/Hello.vue`
-- `../src/Hello.vue?vue&type=template&id=184cbba9&lang.js`
+Browse to dist/index.html and observe Vue does not call the data() function of the component.

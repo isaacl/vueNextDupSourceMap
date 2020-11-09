@@ -8,7 +8,7 @@ const isProd = process.env.NODE_ENV === 'production';
 const rootDir = path.resolve(__dirname);
 
 export default {
-  input: 'src/Hello.vue',
+  input: 'src/index.js',
   output: [
     {
       file: 'dist/bundle.js',
@@ -25,5 +25,4 @@ export default {
       __VUE_PROD_DEVTOOLS__: 'true',
     }),
   ],
-  external: ['vue']
 };
